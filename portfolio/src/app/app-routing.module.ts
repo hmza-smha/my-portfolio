@@ -10,6 +10,11 @@ import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
+  {
     path: 'home',
     component: HomeComponent
   },
