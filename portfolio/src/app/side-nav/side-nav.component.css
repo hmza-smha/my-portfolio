@@ -18,17 +18,17 @@
 }
 
 .side-nav > .name{
+    color: black;
     margin-bottom: 30px;
     text-align: center;
     font-size: 25px;
     line-height: 20px;
     font-weight: bold;
-    word-spacing: -5px
 
 }
 
 .side-nav > .name > span{
-    font-size: 16px;
+    font-size: 18px;
     color: #aaa;
     font-weight: normal;
 }
