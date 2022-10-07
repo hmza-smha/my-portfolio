@@ -12,6 +12,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -24,11 +25,12 @@ import { HeaderComponent } from './header/header.component';
     ProjectsComponent,
     ServicesComponent,
     ContactComponent,
-    HeaderComponent
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FlexLayoutModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
