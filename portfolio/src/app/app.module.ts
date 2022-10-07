@@ -13,6 +13,7 @@ import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { NextPageComponent } from './next-page/next-page.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ServicesComponent,
     ContactComponent,
     HeaderComponent,
+    NextPageComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import Typed from 'typed.js';
+import { PagesService } from '../shared/pages.service';
 
 @Component({
   selector: 'app-home',
@@ -7,15 +8,24 @@ import Typed from 'typed.js';
   styleUrls: ['./home.component.css']
 })
 
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, OnDestroy {
+  constructor(private pagesService: PagesService) { }
+
+  
 
   typing = true;
   title1 = 'but never follow a routine';
   title2 = 'but never leave myself behind'
   cursor1 = true;
   cursor2 = false;
+  timer: any;
+
+  ngOnDestroy(): void {
+    clearTimeout(this.timer);
+  }
 
   ngOnInit(): void {
+    this.pagesService.page.next(0);
 
     var options = {
       strings: ['Committed,'],
@@ -23,7 +33,7 @@ export class HomeComponent implements OnInit {
       showCursor: false,
       onComplete: () => {
         this.typing = false;
-        setTimeout(() => {
+        this.timer = setTimeout(() => {
           document.getElementById('title1').style.opacity = '1';
         }, 2000)
       }
@@ -31,7 +41,7 @@ export class HomeComponent implements OnInit {
 
     var typed = new Typed('.header1', options);
 
-    setTimeout(() => {
+    this.timer = setTimeout(() => {
       this.typing = true;
       this.cursor1 = false;
       this.cursor2 = true;
@@ -41,7 +51,7 @@ export class HomeComponent implements OnInit {
         showCursor: false,
         onComplete: () => {
           this.typing = false;
-          setTimeout(() => {
+          this.timer = setTimeout(() => {
             document.getElementById('title2').style.opacity = '1';
           }, 2000)
         }

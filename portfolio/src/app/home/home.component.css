@@ -21,13 +21,13 @@ p{
 #title1{
     opacity: 0;
     transition: 0.5s;
-    text-shadow: 0 0 3px dodgerblue;
+    text-shadow: 0 0 15px dodgerblue;
 }
 
 #title2{
     opacity: 0;
     transition: 0.5s;
-    text-shadow: 0 0 3px dodgerblue;
+    text-shadow: 0 0 15px dodgerblue;
 }
 
 .cursor{
