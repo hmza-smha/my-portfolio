@@ -1,1 +1,3 @@
-<button (click)="onMove()">NEXT</button>
+<div [ngClass]="{'animate': next}">
+    <a (click)="onMove()" class="button arrow">NEXT</a>
+</div>

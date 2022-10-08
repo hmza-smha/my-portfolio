@@ -40,7 +40,7 @@
 }
 
 .links{
-    border-radius: 0 20px 0 20px;
+    border-radius: 5px 20px 5px 20px;
     display: block;
     color: inherit;
     padding: 5px 10px;
@@ -49,12 +49,11 @@
 }
 
 .active{
-    box-shadow: 0 0 10px #111;
+    box-shadow: 0 0 10px dodgerblue;
 }
 
 .links:hover{
-    font-weight: bold;
-    box-shadow: 0 0 10px #111;
+    box-shadow: 0 0 10px dodgerblue;
 }
 .social-icons{
     position: absolute;

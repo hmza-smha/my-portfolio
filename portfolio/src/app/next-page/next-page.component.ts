@@ -5,18 +5,23 @@ import { PagesService } from '../shared/pages.service';
 @Component({
   selector: 'app-next-page',
   templateUrl: './next-page.component.html',
-  styleUrls: ['./next-page.component.css']
+  styleUrls: ['./next-page.component.scss']
 })
 export class NextPageComponent implements OnInit {
 
   constructor(private pagesService: PagesService, private activaedRoute: ActivatedRoute, private router: Router) { }
   pageNo: number;
+  next = false;
+
   ngOnInit(): void {
+
+    setTimeout(() => {
+      this.next = true;
+    }, 10000)
 
     this.pagesService.page.subscribe(pageNo => {
       this.pageNo = pageNo;
     })
-
   }
 
   onMove() {
