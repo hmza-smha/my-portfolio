@@ -15,12 +15,20 @@ export class NextPageComponent implements OnInit {
 
   ngOnInit(): void {
 
-    setTimeout(() => {
-      this.next = true;
-    }, 10000)
+    // setTimeout(() => {
+    //   this.next = true;
+    // }, 10000)
 
     this.pagesService.page.subscribe(pageNo => {
       this.pageNo = pageNo;
+      if (pageNo == 0) {
+        setTimeout(() => {
+          this.next = true;
+        }, 10000)
+      }
+      else {
+        this.next = true;
+      }
     })
   }
 

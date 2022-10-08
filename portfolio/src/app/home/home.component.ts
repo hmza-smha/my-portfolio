@@ -34,7 +34,10 @@ export class HomeComponent implements OnInit, OnDestroy {
       onComplete: () => {
         this.typing = false;
         this.timer = setTimeout(() => {
-          document.getElementById('title1').style.opacity = '1';
+          let title1 = document.getElementById('title1');
+          if(title1){
+            title1.style.opacity = '1';
+          }
         }, 2000)
       }
     };
@@ -52,7 +55,10 @@ export class HomeComponent implements OnInit, OnDestroy {
         onComplete: () => {
           this.typing = false;
           this.timer = setTimeout(() => {
-            document.getElementById('title2').style.opacity = '1';
+            let title2 = document.getElementById('title2');
+            if(title2){
+              title2.style.opacity = '1';
+            }
           }, 2000)
         }
       };
