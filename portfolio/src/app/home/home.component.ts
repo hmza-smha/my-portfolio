@@ -11,15 +11,19 @@ import { PagesService } from '../shared/pages.service';
 export class HomeComponent implements OnInit, OnDestroy {
   constructor(private pagesService: PagesService) { }
 
-  
-
   typing = true;
   title1 = 'but never follow a routine';
   title2 = 'but never leave myself behind'
   cursor1 = true;
   cursor2 = false;
   timer: any;
+  bioContent = false;
 
+  company = {
+    name: 'Alt Shift Creative',
+    position: 'Full Stack Developer',
+    startingDate: '8/2022'
+  }
   ngOnDestroy(): void {
     clearTimeout(this.timer);
   }
@@ -34,7 +38,10 @@ export class HomeComponent implements OnInit, OnDestroy {
       onComplete: () => {
         this.typing = false;
         this.timer = setTimeout(() => {
-          document.getElementById('title1').style.opacity = '1';
+          let title1 = document.getElementById('title1');
+          if(title1){
+            title1.style.opacity = '1';
+          }
         }, 2000)
       }
     };
@@ -52,7 +59,12 @@ export class HomeComponent implements OnInit, OnDestroy {
         onComplete: () => {
           this.typing = false;
           this.timer = setTimeout(() => {
-            document.getElementById('title2').style.opacity = '1';
+            let title2 = document.getElementById('title2');
+            if(title2){
+              title2.style.opacity = '1';
+              let bioTitle = document.getElementById('bio-title');
+              bioTitle.style.opacity = '1';
+            }
           }, 2000)
         }
       };
@@ -60,5 +72,9 @@ export class HomeComponent implements OnInit, OnDestroy {
       var typed = new Typed('.header2', options);
     }, 5000)
 
+  }
+
+  toogleConent(){
+    this.bioContent = !this.bioContent;
   }
 }

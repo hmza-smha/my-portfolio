@@ -1,58 +1,75 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Route, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { PagesService } from '../shared/pages.service';
+
+enum Page {
+  HOME = 'home',
+  SERVICES = 'services',
+  EXPERINCE = 'experince',
+  EDUCATION = 'education',
+  PROJECTS = 'projects',
+  CONTACT = 'contact' 
+}
 
 @Component({
   selector: 'app-next-page',
   templateUrl: './next-page.component.html',
   styleUrls: ['./next-page.component.scss']
 })
+
 export class NextPageComponent implements OnInit {
 
-  constructor(private pagesService: PagesService, private activaedRoute: ActivatedRoute, private router: Router) { }
+  constructor(private pagesService: PagesService, private router: Router) { }
+  
   pageNo: number;
+  totalPages = 5;
   next = false;
 
   ngOnInit(): void {
 
-    setTimeout(() => {
-      this.next = true;
-    }, 10000)
+    // setTimeout(() => {
+    //   this.next = true;
+    // }, 10000)
 
     this.pagesService.page.subscribe(pageNo => {
       this.pageNo = pageNo;
+      if (pageNo == 0) {
+        setTimeout(() => {
+          this.next = true;
+        }, 10000)
+      }
+      else {
+        this.next = true;
+      }
     })
   }
 
   onMove() {
+    console.log(this.pageNo);
     let page = '';
-    switch (this.pageNo == 6 ? 0 : this.pageNo + 1) {
+    switch (this.pageNo == this.totalPages ? 0 : this.pageNo+1) {
       case 0:
-        page = 'home';
+        page = Page.HOME;
         break;
 
       case 1:
-        page = 'about';
+        page = Page.SERVICES;
         break;
 
       case 2:
-        page = 'experince';
+        page = Page.EXPERINCE;
         break;
 
       case 3:
-        page = 'education';
+        page = Page.EDUCATION;
         break;
 
       case 4:
-        page = 'projects';
+        page = Page.PROJECTS;
         break;
 
       case 5:
-        page = 'services';
-        break;
-
-      case 6:
-        page = 'contact';
+        page = Page.CONTACT;
         break;
     }
 
