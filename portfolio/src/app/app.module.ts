@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
 import { EducationComponent } from './education/education.component';
 import { ExperinceComponent } from './experince/experince.component';
 import { ProjectsComponent } from './projects/projects.component';
@@ -20,7 +19,6 @@ import { NextPageComponent } from './next-page/next-page.component';
     AppComponent,
     SideNavComponent,
     HomeComponent,
-    AboutComponent,
     EducationComponent,
     ExperinceComponent,
     ProjectsComponent,

@@ -11,7 +11,7 @@ export class ServicesComponent implements OnInit {
   constructor(private pagesService: PagesService) { }
 
   ngOnInit(): void {
-    this.pagesService.page.next(5);
+    this.pagesService.page.next(1);
   }
 
 }
