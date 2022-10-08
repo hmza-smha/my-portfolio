@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PagesService } from '../shared/pages.service';
 
 @Component({
   selector: 'app-education',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EducationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private pagesService: PagesService) { }
 
   ngOnInit(): void {
+    this.pagesService.page.next(3);
   }
 
 }
