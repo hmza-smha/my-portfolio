@@ -45,7 +45,7 @@ p{
 .bio-title{
     font-size: 15px;
     opacity: 0;
-    transition: 3s;
+    transition: opacity 3s;
     cursor: pointer;
 }
 .bio-title:hover{

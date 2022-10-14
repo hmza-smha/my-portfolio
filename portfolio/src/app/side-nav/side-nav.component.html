@@ -4,7 +4,7 @@
     <p class="name">HamZa A. Samha<br><span>Software Engineer</span></p>
     <ul>
         <li *ngFor="let link of links">
-            <a class="links" [routerLink]="link | lowercase" routerLinkActive="active">{{ link != 'Services' ? link : 'Services / Skills' }}</a>
+            <a class="links" [routerLink]="link | lowercase" routerLinkActive="active">{{ link }}</a>
         </li>
     </ul>
     <div class="social-icons">
