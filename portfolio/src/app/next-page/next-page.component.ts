@@ -4,7 +4,7 @@ import { PagesService } from '../shared/pages.service';
 
 enum Page {
   HOME = 'home',
-  SERVICES = 'services',
+  ABOUT = 'about',
   EXPERINCE = 'experince',
   EDUCATION = 'education',
   PROJECTS = 'projects',
@@ -53,7 +53,7 @@ export class NextPageComponent implements OnInit {
         break;
 
       case 1:
-        page = Page.SERVICES;
+        page = Page.ABOUT;
         break;
 
       case 2:
