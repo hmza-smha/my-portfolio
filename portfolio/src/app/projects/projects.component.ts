@@ -11,7 +11,7 @@ export class ProjectsComponent implements OnInit {
   constructor(private pagesService: PagesService) { }
 
   ngOnInit(): void {
-    this.pagesService.page.next(4);
+    this.pagesService.page.next(3);
   }
 
 }
