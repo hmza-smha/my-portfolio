@@ -9,7 +9,11 @@ import { PagesService } from '../shared/pages.service';
 export class AboutComponent implements OnInit {
 
   constructor(private pagesService: PagesService) { }
-
+  company = {
+    name: 'Alt Shift Creative',
+    position: 'Full Stack Developer',
+    startingDate: '8/2022'
+  }
   ngOnInit(): void {
     this.pagesService.page.next(1);
   }

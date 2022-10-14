@@ -9,7 +9,7 @@ export class SideNavComponent implements OnInit {
 
   constructor() { }
 
-  links = ['Home', 'About', 'Experince', 'Education', 'Projects', 'Contact'];
+  links = ['Home', 'About', 'Education', 'Projects', 'Contact'];
 
   ngOnInit(): void {
   }

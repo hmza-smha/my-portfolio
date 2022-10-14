@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { HomeComponent } from './home/home.component';
 import { EducationComponent } from './education/education.component';
-import { ExperinceComponent } from './experince/experince.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
@@ -20,7 +19,6 @@ import { NextPageComponent } from './next-page/next-page.component';
     SideNavComponent,
     HomeComponent,
     EducationComponent,
-    ExperinceComponent,
     ProjectsComponent,
     AboutComponent,
     ContactComponent,

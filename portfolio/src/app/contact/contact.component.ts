@@ -11,7 +11,7 @@ export class ContactComponent implements OnInit {
   constructor(private pagesService: PagesService) { }
 
   ngOnInit(): void {
-    this.pagesService.page.next(5);
+    this.pagesService.page.next(4);
   }
 
 }

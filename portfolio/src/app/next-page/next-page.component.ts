@@ -4,7 +4,7 @@ import { PagesService } from '../shared/pages.service';
 
 enum Page {
   HOME = 'home',
-  SERVICES = 'services',
+  ABOUT = 'about',
   EXPERINCE = 'experince',
   EDUCATION = 'education',
   PROJECTS = 'projects',
@@ -22,7 +22,7 @@ export class NextPageComponent implements OnInit {
   constructor(private pagesService: PagesService, private router: Router) { }
   
   pageNo: number;
-  totalPages = 5;
+  totalPages = 4;
   next = false;
 
   ngOnInit(): void {
@@ -53,22 +53,18 @@ export class NextPageComponent implements OnInit {
         break;
 
       case 1:
-        page = Page.SERVICES;
+        page = Page.ABOUT;
         break;
 
       case 2:
-        page = Page.EXPERINCE;
-        break;
-
-      case 3:
         page = Page.EDUCATION;
         break;
 
-      case 4:
+      case 3:
         page = Page.PROJECTS;
         break;
 
-      case 5:
+      case 4:
         page = Page.CONTACT;
         break;
     }

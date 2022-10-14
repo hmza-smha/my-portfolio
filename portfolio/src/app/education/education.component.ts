@@ -11,7 +11,7 @@ export class EducationComponent implements OnInit {
   constructor(private pagesService: PagesService) { }
 
   ngOnInit(): void {
-    this.pagesService.page.next(3);
+    this.pagesService.page.next(2);
   }
 
 }
