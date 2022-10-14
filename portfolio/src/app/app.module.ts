@@ -8,7 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { EducationComponent } from './education/education.component';
 import { ExperinceComponent } from './experince/experince.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { ServicesComponent } from './services/services.component';
+import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -22,7 +22,7 @@ import { NextPageComponent } from './next-page/next-page.component';
     EducationComponent,
     ExperinceComponent,
     ProjectsComponent,
-    ServicesComponent,
+    AboutComponent,
     ContactComponent,
     HeaderComponent,
     NextPageComponent,

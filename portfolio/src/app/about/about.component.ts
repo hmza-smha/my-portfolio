@@ -3,10 +3,10 @@ import { PagesService } from '../shared/pages.service';
 
 @Component({
   selector: 'app-services',
-  templateUrl: './services.component.html',
-  styleUrls: ['./services.component.css']
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.css']
 })
-export class ServicesComponent implements OnInit {
+export class AboutComponent implements OnInit {
 
   constructor(private pagesService: PagesService) { }
 

@@ -18,6 +18,7 @@
 }
 
 .side-nav > .name{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
     margin-bottom: 30px;
     text-align: center;
@@ -45,15 +46,19 @@
     color: inherit;
     padding: 5px 10px;
     margin-bottom: 7px;
-    transition: 400ms;
+    /* transition: 400ms; */
 }
 
 .active{
-    box-shadow: 0 0 10px dodgerblue;
+    /* box-shadow: 0 0 10px dodgerblue; */
+    color: dodgerblue;
+    font-weight: bold
 }
 
 .links:hover{
-    box-shadow: 0 0 10px dodgerblue;
+    /* box-shadow: 0 0 10px dodgerblue; */
+    color: dodgerblue;
+    font-weight: bold
 }
 .social-icons{
     position: absolute;
