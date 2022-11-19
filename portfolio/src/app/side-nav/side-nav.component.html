@@ -4,7 +4,7 @@
     <p class="name">HamZa Samha<br><span>Full Stack Developer</span></p>
     <ul>
         <li *ngFor="let link of links">
-            <a class="links" [routerLink]="link | lowercase" routerLinkActive="active">{{ link }}</a>
+            <a class="links" href="#{{link | lowercase}}" routerLinkActive="active">{{ link }}</a>
         </li>
     </ul>
     <div class="social-icons">

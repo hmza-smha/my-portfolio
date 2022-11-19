@@ -1,0 +1,8 @@
+.router-outlet{
+    height: 100%;
+    margin-left: 350px;
+}
+
+.home{
+    height: 100%;
+}

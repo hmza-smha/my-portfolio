@@ -14,4 +14,7 @@ export class ContactComponent implements OnInit {
     this.pagesService.page.next(4);
   }
 
+  onContact(){
+    window.open('mailto:smha.hmza@gmail.com');
+  }
 }

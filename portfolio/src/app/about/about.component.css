@@ -1,8 +1,8 @@
 .container {
     animation: container-anumation 2s;
-    position: absolute;
+    /* position: absolute;
     top: 20%;
-    margin: 0 100px 0 50px;
+    margin: 0 100px 0 50px; */
 }
 a{
     color: dodgerblue;
@@ -29,7 +29,7 @@ img{
     line-height: 35px;
     font-size: 20px;
 }
-
+/* 
 @keyframes container-anumation {
     0%{
         transform: translateX(-50px);
@@ -37,4 +37,4 @@ img{
     100%{
         transform: translateX(0px);
     }
-}
+} */
