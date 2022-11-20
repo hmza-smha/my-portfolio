@@ -8,10 +8,9 @@ import { PagesService } from '../shared/pages.service';
 })
 export class EducationComponent implements OnInit {
 
-  constructor(private pagesService: PagesService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.pagesService.page.next(2);
   }
 
 }

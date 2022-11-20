@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { PagesService } from '../shared/pages.service';
 
 @Component({
-  selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  selector: 'app-footer',
+  templateUrl: './footer.component.html',
+  styleUrls: ['./footer.component.css']
 })
-export class ProjectsComponent implements OnInit {
+export class FooterComponent implements OnInit {
 
   constructor() { }
 

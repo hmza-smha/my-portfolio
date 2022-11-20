@@ -8,10 +8,9 @@ import { HomeComponent } from './home/home.component';
 import { EducationComponent } from './education/education.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { NextPageComponent } from './next-page/next-page.component';
 
 @NgModule({
   declarations: [
@@ -21,9 +20,8 @@ import { NextPageComponent } from './next-page/next-page.component';
     EducationComponent,
     ProjectsComponent,
     AboutComponent,
-    ContactComponent,
+    FooterComponent,
     HeaderComponent,
-    NextPageComponent,
   ],
   imports: [
     BrowserModule,

@@ -6,3 +6,20 @@
 .home{
     height: 100%;
 }
+
+h3 {
+ color: dodgerblue;
+}
+
+hr {
+    width: 10%;
+    margin-bottom: 20px;
+}
+
+.education{ 
+    margin: 20% 0;
+}
+
+.projects{ 
+    margin-bottom: 30%;
+}

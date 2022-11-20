@@ -1,21 +1,31 @@
 <app-side-nav></app-side-nav>
 <div class="router-outlet">
     <app-header></app-header>
-    <!-- <app-next-page></app-next-page> -->
-    <!-- <router-outlet></router-outlet> -->
-    <div class="home">
+    
+    <div class="home" name="home" id="home">
         <app-home></app-home>
     </div>
-    <div class="about" id="about">
+
+    <div class="about" name="about" id="about">
         <app-about></app-about>
     </div>
-    <br><br>
-    <br><br>
-    <br><br>
-    <app-education></app-education>
-    <app-projects></app-projects>
-    <app-contact></app-contact>
 
-    <img src="./../assets/images/earth.gif" alt="">
+    <div class="education" id="education">
+        <h3>EDUCATION</h3>
+        <hr>
+        <app-education></app-education>
+    </div>
+
+    <div class="projects" id="projects">
+        <h3>PROJECTS</h3>
+        <hr>
+        <app-projects></app-projects>
+    </div>
+
+    <div class="footer">
+        <h3>Let's make something special!</h3>
+        <hr>
+        <app-footer></app-footer>
+    </div>
 </div>
 

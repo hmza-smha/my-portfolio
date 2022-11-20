@@ -50,12 +50,6 @@
     /* transition: 400ms; */
 }
 
-.active{
-    /* box-shadow: 0 0 10px dodgerblue; */
-    color: dodgerblue;
-    font-weight: bold
-}
-
 .links:hover{
     /* box-shadow: 0 0 10px dodgerblue; */
     color: dodgerblue;
@@ -73,4 +67,16 @@
     position: absolute;
     bottom: 20px;
     font-size: 12px;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.active{
+    color: dodgerblue;
+    font-weight: bold;
 }

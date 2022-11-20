@@ -1,12 +1,11 @@
 .container {
     animation: container-anumation 2s;
-    /* position: absolute;
-    top: 20%;
-    margin: 0 100px 0 50px; */
 }
+
 a{
     color: dodgerblue;
 }
+
 p{
     margin: 20px 0;
 }
@@ -29,12 +28,3 @@ img{
     line-height: 35px;
     font-size: 20px;
 }
-/* 
-@keyframes container-anumation {
-    0%{
-        transform: translateX(-50px);
-    }
-    100%{
-        transform: translateX(0px);
-    }
-} */

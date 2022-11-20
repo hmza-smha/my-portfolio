@@ -9,7 +9,7 @@ import { PagesService } from '../shared/pages.service';
 })
 
 export class HomeComponent implements OnInit, OnDestroy {
-  constructor(private pagesService: PagesService) { }
+  constructor() { }
 
   typing = true;
   title1 = 'but never follow a routine';
@@ -29,8 +29,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.pagesService.page.next(0);
-
     var options = {
       strings: ['Committed,'],
       typeSpeed: 70,
@@ -62,8 +60,6 @@ export class HomeComponent implements OnInit, OnDestroy {
             let title2 = document.getElementById('title2');
             if(title2){
               title2.style.opacity = '1';
-              let bioTitle = document.getElementById('bio-title');
-              bioTitle.style.opacity = '1';
             }
           }, 2000)
         }

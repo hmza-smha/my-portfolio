@@ -1,12 +1,12 @@
 main{
     position: absolute;
-    left: 55%;
+    left: 50%;
     top: 45%;
     transform: translate(-50%, -50%);
     font-size: 30px;
     height: 300px;
     margin-left: 8%;
-    width: 50%;
+    width: 40%;
 }
 
 h1{
@@ -40,29 +40,6 @@ p{
     animation: typing 2s;
     color: aliceblue;
 
-}
-
-.bio-title{
-    font-size: 15px;
-    opacity: 0;
-    transition: opacity 3s;
-    cursor: pointer;
-}
-.bio-title:hover{
-    text-decoration: underline;
-}
-
-.bio-content{
-    margin-top: 10px;
-    font-size: 15px;
-    line-height: 26px;
-    /* font-weight: 600; */
-    color: #111;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.toggleContnet{
-    color: red;
 }
 
 @keyframes typing{
