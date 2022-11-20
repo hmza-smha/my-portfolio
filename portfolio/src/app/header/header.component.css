@@ -1,0 +1,97 @@
+header{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.contact{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.float1{
+  background-color: rgb(245, 245, 245);
+    border: 1px solid #ccc;
+    /* color: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 15px;
+    border-radius: 15px;
+    /* box-shadow: 7px -7px 10px #bbb; */
+    z-index: 1;
+}
+
+.float1 p{
+  margin: 2px;
+}
+
+.btns{
+  margin-top: 10px;
+}
+
+.float2{
+  box-shadow: 3px -3px 5px #ddd;
+  border: 1px solid #ccc;
+  width: 30px;
+  height: 10px;
+  border-radius: 10px;
+  margin: 5px 0;
+  background-color: #eee;
+}
+
+.float3{
+  box-shadow: 3px -3px 5px #ddd;
+  border: 1px solid #ccc;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #eee;
+}
+
+.phone,
+.email,
+.city{
+  display: flex;
+}
+
+.pulse-effect {
+  background-color: dodgerblue;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  position: relative;
+  margin: auto;
+  top: 50px;
+  right: 90px;
+}
+
+.circle {
+  position: absolute;
+  background-color: inherit;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  opacity: 0.5;
+  animation: pulse 3s ease-out infinite;
+}
+
+.circle:nth-of-type(1) {
+  animation-delay: -0.5s;
+}
+
+.circle:nth-of-type(2) {
+  animation-delay: -1s;
+}
+
+.circle:nth-of-type(3) {
+  animation-delay: -1.5s;
+}
+
+@keyframes pulse {
+  100% {
+    transform: scale(3.5);
+    opacity: 0;
+  }
+}

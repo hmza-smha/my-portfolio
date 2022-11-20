@@ -1,0 +1,82 @@
+.side-nav {
+    background-color:#E1FFEE;
+    /* background-color:#FEFBF6; */
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 300px;
+}
+
+.side-nav > img{
+    border-radius: 50%;
+    margin: 50px 0 20px;
+    width: 150px;
+    box-shadow: 0 0 100px #aaa;
+    border: 3px solid #d3f1e0;
+}
+
+.side-nav > .name{
+    font-family: 'Comforter Brush', cursive;
+    color: black;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: bold;
+}
+
+.side-nav > .name > span{
+    font-size: 15px;
+    color: #aaa;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.side-nav > ul > li {
+    text-align: center;
+    text-decoration: none;
+    transition: 100ms;
+}
+
+.links{
+    border-radius: 5px 20px 5px 20px;
+    display: block;
+    color: inherit;
+    padding: 5px 10px;
+    margin-bottom: 7px;
+    /* transition: 400ms; */
+}
+
+.links:hover{
+    /* box-shadow: 0 0 10px dodgerblue; */
+    color: dodgerblue;
+}
+.social-icons{
+    position: absolute;
+    bottom: 40px;
+}
+.social-icons svg{
+   cursor: pointer;
+   margin: 0 5px;
+}
+
+.side-nav p:last-child {
+    position: absolute;
+    bottom: 20px;
+    font-size: 12px;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.active{
+    color: dodgerblue;
+    font-weight: bold;
+}

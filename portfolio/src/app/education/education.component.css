@@ -1,0 +1,9 @@
+a{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+img{
+    width: 50px;
+    margin-right: 10px;
+}
