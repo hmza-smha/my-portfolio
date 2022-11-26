@@ -61,6 +61,7 @@ export class HomeComponent implements OnInit, OnDestroy {
             if(title2){
               title2.style.opacity = '1';
             }
+            this.cursor2 = false;
           }, 2000)
         }
       };

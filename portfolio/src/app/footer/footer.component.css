@@ -6,3 +6,14 @@
 img {
     margin: 0 50px;
 }
+
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+    img {
+        margin: 0 10px;
+        width: 200px;
+    }
+    a{
+        font-size: 12px;
+    }
+}
