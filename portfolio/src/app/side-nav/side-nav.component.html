@@ -1,12 +1,12 @@
-<div class="side-nav">
+<div class="side-nav" #sideNav>
     <!-- <img src="https://via.placeholder.com/150" alt=""> -->
     <img src="./../../assets/images/pic4.jpg" alt="">
     <p class="name">HamZa Samha<br><span>Full Stack Developer</span></p>
     <ul>
-        <li><a class="links" id="homeLink" href="#home">home</a></li>
-        <li><a class="links" id="aboutLink" href="#about">about</a></li>
-        <li><a class="links" id="educationLink" href="#education">education</a></li>
-        <li><a class="links" id="projectsLink" href="#projects">projects</a></li>
+        <li><a class="links" id="homeLink" href="#home">Home</a></li>
+        <li><a class="links" id="aboutLink" href="#about">About</a></li>
+        <li><a class="links" id="educationLink" href="#education">Education</a></li>
+        <li><a class="links" id="projectsLink" href="#projects">Projects</a></li>
     </ul>
     <div class="btns">
         <a class="cv-btn" href="./../../assets/files/HamZa Samha (CV).pdf" download="HamZa Samha CV">Download CV</a>
@@ -41,4 +41,9 @@
     <p>
         This portfolio made with ❤️ by HamZa
     </p>
+</div>
+<div class="side-icon" (click)="toggleSideNav()">
+    <div class="line line-1"></div>
+    <div class="line line-2"></div>
+    <div class="line line-3"></div>
 </div>
