@@ -40,13 +40,21 @@ a {
     background-color: #111;
     color: #eee;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 3px;
     border: 1px solid black;
     padding: 0 3px;
     margin: 3px;
+    font-size: 12px;
 }
 
 .cv-btn:hover{
     box-shadow: 2px -2px 5px #ddd;
     background-color: black;
+}
+
+@media only screen and (max-width: 1400px){
+    /*Tablets [601px -> 1200px]*/
+    body{
+        margin: 0;
+    }
 }

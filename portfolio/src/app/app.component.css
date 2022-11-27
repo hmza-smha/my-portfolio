@@ -23,3 +23,12 @@ hr {
 .projects{ 
     margin-bottom: 30%;
 }
+
+@media only screen and (max-width: 950px){
+    .router-outlet{
+        margin: 20px;
+    }
+    .education{ 
+        margin: 30% 0;
+    }
+}

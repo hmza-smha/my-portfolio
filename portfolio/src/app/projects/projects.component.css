@@ -1,10 +1,21 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 img{
-    width: 600px;
+    max-width: 600px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
     border-radius: 10px;
 }
+
 p{
     margin: 20px 0;
+}
+
+a{
+    text-decoration: underline;
 }
 
 .links{
@@ -14,7 +25,16 @@ p{
     margin: 40px 0;
 }
 
-.container{
-    display: flex;
-    align-items: center;
+
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+    img{
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+    img{
+        width: 300px;
+    }
 }

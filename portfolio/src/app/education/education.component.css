@@ -7,3 +7,15 @@ img{
     width: 50px;
     margin-right: 10px;
 }
+
+@media only screen and (max-width: 600px){
+	h2{
+        font-size: 15px;
+    }
+    a{
+        font-size: 12px;
+    }
+    summary{
+        font-size: 10px;
+    }
+}

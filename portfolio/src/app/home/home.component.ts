@@ -17,7 +17,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   cursor1 = true;
   cursor2 = false;
   timer: any;
-  bioContent = false;
 
   company = {
     name: 'Alt Shift Creative',
@@ -61,6 +60,7 @@ export class HomeComponent implements OnInit, OnDestroy {
             if(title2){
               title2.style.opacity = '1';
             }
+            this.cursor2 = false;
           }, 2000)
         }
       };
@@ -68,9 +68,5 @@ export class HomeComponent implements OnInit, OnDestroy {
       var typed = new Typed('.header2', options);
     }, 5000)
 
-  }
-
-  toogleConent(){
-    this.bioContent = !this.bioContent;
   }
 }
